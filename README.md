@@ -1,6 +1,6 @@
 # Voken flavored Base32 in GoLang
 
-Compute Voken flavored Base32 encoding/decoding, with auto checksum.
+Voken flavored Base32 encoding/decoding, with auto checksum.
 
 ## API
 
