@@ -1,1 +1,3 @@
-# go-base32
+# Voken flavored Base32 in GoLang
+
+...
