@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  # push:
+  #   branches:
+  #     - master
+  release:
+    types:
+      - created
+
+jobs:
+  auto:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup python 3.8
+        uses: actions/setup-go@v1
+        with:
+          go-version: '1.16.4'
+
+      - name: Test
+        run: go test
+
+      - name: Go get
+        run: go get github.com/voken1000g/go-base32
